@@ -1,5 +1,11 @@
+#brain-img {
+	width: 580px;
+	height: 580px;
+}
+
 header img.img-responsive {
     max-width: 50%;
+
 }
 
 .modal img.img-responsive {
@@ -11,7 +17,7 @@ header img.img-responsive {
 }
 
 .popover.tour-tour .popover-title {
-    background-color: #18bc9c;
+    background-color: #A8ECFF;
     color: #FFF;
 }
 
