@@ -57,4 +57,77 @@ $(function() {
     
     //tooltips
     $('.tooltips').tooltip();
+
+        var brain = document.getElementById('brainimage');
+    
+    // $("#brainimage_blue").hover(function() {
+    //     $("#brainimage_blue").css({"display": "block"});
+    // });
+
+    $("#brainimage_blue").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_blue.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_blue").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
+
+
+    $("#brainimage_green").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_green.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_green").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
+
+    $("#brainimage_yellow").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_yellow.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_yellow").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
+
+    $("#brainimage_red").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_red.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_red").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
+
+    $("#brainimage_pink").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_pink.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_pink").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
+
+    $("#brainimage_teal").on("mouseenter", function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage_teal.png' usemap='#map' id='brainimage'>";
+    });
+    $("#brainimage_teal").on("mouseleave",function(){
+        brain = document.getElementById('brainimage');
+        brain.parentNode.removeChild(document.getElementById('brainimage'));
+        document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
+    });
 });
