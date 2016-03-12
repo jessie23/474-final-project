@@ -1,3 +1,16 @@
+.process h3 {
+	padding: 10px;
+	text-align: center;
+}
+
+.process h4 {
+	color: #2A3E51;
+}
+
+.process {
+	padding: 10px;
+}
+
 #brain-img {
 	width: 580px;
 	height: 580px;
@@ -30,7 +43,7 @@ header img.img-responsive {
 }
 
 .question {
-    padding-bottom: 1200px;
+    /*padding-bottom: 1200px; */
 }
 
 table th {
