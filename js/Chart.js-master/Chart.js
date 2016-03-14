@@ -3753,5 +3753,24 @@ var pieData = [
    }
 ];
 
-var context = document.getElementById('sleep_stages').getContext('2d');
+var context = document.getElementById('sleep_stages_pie').getContext('2d');
 var sleepChart = new Chart(context).Pie(pieData);
+
+var data = {
+    labels: ["Wake", "Light", "Deep", "REM"],
+    datasets: [
+        {
+            label: "Sleep Stages",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [13, 306.5, 67.2, 29.6]
+        }
+    ]
+};
+
+var ctx = document.getElementById('sleep_stages_radar').getContext('2d');
+var myRadarChart = new Chart(ctx).Radar(data);
