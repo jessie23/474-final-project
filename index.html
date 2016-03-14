@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-        <title>INFO 474 Final Project</title>
+        <title>The Dream State</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/bootstrap-theme-freelancer.css" />
@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/fonts.min.css" />
         <link rel="stylesheet" href="css/animate.min.css" />
 	<link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/favicon.png">
     </head>
     <body id="page-top" class="index">
         
@@ -182,8 +183,16 @@
                             <p>There are four main stages of a person's sleep cycle: <em>Wake, Light, Deep and REM.</em></p>
                             <p>Most dreams occur during the <b>REM</b> stage, although this is typically one of the shorter stages, with an average of 29.6 minutes total during a 7 hour sleep cycle. Adversely, the majority of time is spent in <b>Light</b> sleep (an average of 306.5 minutes or ~5.12 hours).</p>
                             <br />
-                            <canvas id="sleep_stages_pie" width="350" height="350" class="img-responsive wow bounceInRight"/></canvas>
-                            <canvas id="sleep_stages_radar" width="450" height="450" class="img-responsive wow bounceInRight"></canvas>
+                            <div class="container">
+                            <div class="row">
+                            <div class="col-sm-6" style="text-align: center;">
+                            <canvas id="sleep_stages_pie" width="350" height="350" class="alert alert-info wow fadeInRight" style="text-align: center; padding:0;" /></canvas>
+                            </div>
+                            <div class="col-sm-6" style="text-align: center;">
+                            <canvas id="sleep_stages_radar" width="400" height="400" class="alert alert-info wow fadeInRight" style="text-align: center; padding-bottom: 30px; margin:0;"/></canvas>
+                            </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
