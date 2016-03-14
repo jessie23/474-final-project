@@ -58,11 +58,7 @@ $(function() {
     //tooltips
     $('.tooltips').tooltip();
 
-        var brain = document.getElementById('brainimage');
-    
-    // $("#brainimage_blue").hover(function() {
-    //     $("#brainimage_blue").css({"display": "block"});
-    // });
+    var brain = document.getElementById('brainimage');
 
     $("#brainimage_blue").on("mouseenter", function(){
         brain = document.getElementById('brainimage');
