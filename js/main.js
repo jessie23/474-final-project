@@ -1,5 +1,8 @@
+window.onload = function() {
+    alert("For maximum experience, please view full screen in Chrome!");
+}
+
 $(function() {
-    //http://mynameismatthieu.com/WOW/docs.html
     $('.wow:not([data-wow-delay])').attr('data-wow-delay', '0.3s');
     new WOW().init({ offset: 50 });
     
@@ -12,19 +15,16 @@ $(function() {
         event.preventDefault();
     });
     
-    //scrollspy (= top navigation bar marks the current position's chapter) activation
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 80
     });
 
-    // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
     
     //animate header on scroll
-    //cbpAnimatedHeader.js v1.0.0 (http://www.codrops.com)
     var bScrolledHeader = false,
         nChangeHeaderAfter = 300;
     $(window).on('scroll', function(_oEvent) {
