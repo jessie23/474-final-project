@@ -57,6 +57,10 @@ $(function() {
     
     //tooltips
     $('.tooltips').tooltip();
+    
+    $('input').on('mouseover',function(e) {
+        e.preventdefault();
+    });
 
     var brain = document.getElementById('brainimage');
 
@@ -65,12 +69,12 @@ $(function() {
         brain.parentNode.removeChild(document.getElementById('brainimage'));
         document.getElementById('img1').innerHTML = "<img src='img/brainimage_blue.png' usemap='#map' id='brainimage'>";
     });
+
     $("#brainimage_blue").on("mouseleave",function(){
         brain = document.getElementById('brainimage');
         brain.parentNode.removeChild(document.getElementById('brainimage'));
         document.getElementById('img1').innerHTML = "<img src='img/brainimage.png' usemap='#map' id='brainimage'>";
     });
-
 
     $("#brainimage_green").on("mouseenter", function(){
         brain = document.getElementById('brainimage');
